@@ -1,7 +1,7 @@
-import { Router } from 'express';
-const router = Router();
+import { Router } from 'express'
 
 import { createUser, getUsers, getUser, deleteUser, updateUser } from '../controllers/user.controller'
+const router = Router()
 
 router.route('/')
   .post(createUser)
@@ -12,4 +12,4 @@ router.route('/:id')
   .delete(deleteUser)
   .put(updateUser)
 
-export default router;
+export default router
